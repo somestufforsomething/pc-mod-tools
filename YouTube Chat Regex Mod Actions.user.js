@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          0.1
+// @version          0.1.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -27,7 +27,8 @@ const name_filter = [
 const msg_filter = [
     /your-dreams\s*\.\s*online/i,
     /v.{3}\s*\.\s*tech/i,
-    /v.{2}\s*\.\s*fyi/i
+    /v.{2}\s*\.\s*fyi/i,
+    /v.{2}\s*\(\s*\.\s*\)\s*(fyi|ong|ngo|rent|tech)/i
 ];
 
 // TODO: add which action {del, time, hide} to perform:
