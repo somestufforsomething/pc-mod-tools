@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          0.1.4
+// @version          0.1.5
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -26,6 +26,7 @@ const name_filter = [
 
 // Message filters
 const msg_filter = [
+    /niosnc\s*\.\s*site/i,
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
     /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|ngo|ong|red|rent|tech)/i
