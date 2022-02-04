@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220203.1
+// @version          20220203.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -73,16 +73,18 @@ const msg_filter = [
 
                 if (SHOWALL) { console.log(author + ": " + message); }
 
-                if (!deleted && (name_filter.some((re) => re.test(author)) ||
-                                 msg_filter.some((re) => re.test(message)))) {
+                if (name_filter.some((re) => re.test(author)) ||
+                    msg_filter.some((re) => re.test(message))) {
                     count++;
                     console.log("CAUGHT " + count + ":  " + author + ": " + message);
-                    let buttons = target.querySelector('#inline-action-buttons')
-                        .getElementsByTagName('button');
-                    for (let btn of buttons) {
-                        if (btn.getAttribute('aria-label').match(/Hide/)) {
-                            btn.click();
-                            break;
+                    if (!deleted) {
+                        let buttons = target.querySelector('#inline-action-buttons')
+                            .getElementsByTagName('button');
+                        for (let btn of buttons) {
+                            if (btn.getAttribute('aria-label').match(/Hide/)) {
+                                btn.click();
+                                break;
+                            }
                         }
                     }
                 }
