@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          0.1.5
+// @version          20220203.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -56,6 +56,7 @@ const msg_filter = [
 
     if (!isMod) { return; }
 
+    let count = 0;
     console.log("Ready to bonk!");
     new MutationObserver((mutationsList) => {
         mutationsList.forEach(function(mutation) {
@@ -74,7 +75,8 @@ const msg_filter = [
 
                 if (!deleted && (name_filter.some((re) => re.test(author)) ||
                                  msg_filter.some((re) => re.test(message)))) {
-                    console.log("CAUGHT:  " + author + ": " + message);
+                    count++;
+                    console.log("CAUGHT " + count + ":  " + author + ": " + message);
                     let buttons = target.querySelector('#inline-action-buttons')
                         .getElementsByTagName('button');
                     for (let btn of buttons) {
