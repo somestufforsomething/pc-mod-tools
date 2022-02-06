@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220203.2
+// @version          20220205.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -29,7 +29,7 @@ const msg_filter = [
     /niosnc\s*\.\s*site/i,
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
-    /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|ngo|ong|red|rent|tech|today)/i
+    /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|ong|red|rent|tech|today)/i
 ];
 
 // TODO: add which action {del, time, hide} to perform:
