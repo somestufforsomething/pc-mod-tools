@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220205.1
+// @version          20220209.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -21,7 +21,8 @@ const SHOWALL = false;
 const name_filter = [
     /webcams-chat\s*\.\s*com/i,
     /naked-hd\s*\.\s*xyz/i,
-    /loveface\s*\.\s*xyz/i
+    /loveface\s*\.\s*xyz/i,
+    /nlg{2}er/i
 ];
 
 // Message filters
