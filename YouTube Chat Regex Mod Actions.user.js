@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220217.1
+// @version          20220219.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -83,12 +83,18 @@ const msg_filter = [
                     if (!deleted) {
                         let buttons = target.querySelector('#inline-action-buttons')
                             .getElementsByTagName('button');
+                        let del_btn, hide_btn;
                         for (let btn of buttons) {
+                            if (btn.getAttribute('aria-label') === "Remove") {
+                                del_btn = btn;
+                                continue;
+                            }
                             if (btn.getAttribute('aria-label').match(/Hide/)) {
-                                btn.click();
-                                break;
+                                hide_btn = btn;
                             }
                         }
+                        if (!del_btn) { del_btn.click(); }
+                        if (!hide_btn) { hide_btn.click(); }
                     }
                 }
             }
