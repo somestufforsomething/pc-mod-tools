@@ -6,7 +6,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220219.1
+// @version          20220219.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -93,8 +93,8 @@ const msg_filter = [
                                 hide_btn = btn;
                             }
                         }
-                        if (!del_btn) { del_btn.click(); }
-                        if (!hide_btn) { hide_btn.click(); }
+                        if (del_btn) { del_btn.click(); }
+                        if (hide_btn) { hide_btn.click(); }
                     }
                 }
             }
