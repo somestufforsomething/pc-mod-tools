@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name             YouTube Chat Regex Mod Actions
+// @description      Automatically hide messages based on regex
 // @author           somestufforsomething
 // @updateURL        https://github.com/somestufforsomething/pc-mod-tools/raw/main/YouTube%20Chat%20Regex%20Mod%20Actions.user.js
 // @downloadURL      https://github.com/somestufforsomething/pc-mod-tools/raw/main/YouTube%20Chat%20Regex%20Mod%20Actions.user.js
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220219.2
+// @version          20220219.3
 // ==/UserScript==
 
 // ======================== Settings ============================
