@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220219.3
+// @version          20220311.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -86,11 +86,14 @@ const msg_filter = [
                             .getElementsByTagName('button');
                         let del_btn, hide_btn;
                         for (let btn of buttons) {
-                            if (btn.getAttribute('aria-label') === "Remove") {
+                            label = btn.getAttribute('aria-label');
+                            if (label === "Remove"
+                                || label === "削除") {
                                 del_btn = btn;
                                 continue;
                             }
-                            if (btn.getAttribute('aria-label').match(/Hide/)) {
+                            if (label.match(/Hide/) ||
+                                label === "このチャンネルのユーザーを表示しない") {
                                 hide_btn = btn;
                             }
                         }
