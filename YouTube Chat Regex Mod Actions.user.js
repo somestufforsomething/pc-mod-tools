@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220311.1
+// @version          20220319.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -21,7 +21,7 @@ const SHOWALL = false;
 // Name filters
 const name_filter = [
     /webcam-cam\s*\.\s*xyz/i,
-    /webcams-chat\s*\.\s*com/i,
+    /webcams-chat\s*\.\s*(com|xyz)/i,
     /naked-hd\s*\.\s*xyz/i,
     /loveface\s*\.\s*xyz/i,
     /nlg{2}er/i,
