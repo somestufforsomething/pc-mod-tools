@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220319.1
+// @version          20220323.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -20,6 +20,7 @@ const SHOWALL = false;
 // Specify patterns to automatically hide/ban a user from yt chat
 // Name filters
 const name_filter = [
+    /bestcams\s*\.\s*fun/i,
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /naked-hd\s*\.\s*xyz/i,
