@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220323.1
+// @version          20220323.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -26,7 +26,8 @@ const name_filter = [
     /naked-hd\s*\.\s*xyz/i,
     /loveface\s*\.\s*xyz/i,
     /nlg{2}er/i,
-    /richard ?simmons/i
+    /richard ?simmons/i,
+    /hot girls and boys video chat/i
 ];
 
 // Message filters
