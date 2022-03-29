@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220323.3
+// @version          20220328.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -27,7 +27,8 @@ const name_filter = [
     /loveface\s*\.\s*xyz/i,
     /nlg{2}er/i,
     /richard ?simmons/i,
-    /hot girls and boys video chat/i
+    /hot girls and boys video chat/i,
+    /DumbDrum 1999 (Dahir Behi)/i
 ];
 
 // Message filters
