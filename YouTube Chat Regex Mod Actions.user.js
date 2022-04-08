@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220402.2
+// @version          20220407.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -36,7 +36,8 @@ const msg_filter = [
     /niosnc\s*\.\s*site/i,
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
-    /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i
+    /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
+    /i will eliminate the middle class/i
 ];
 
 // TODO: add which action {del, time, hide} to perform:
