@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220407.1
+// @version          20220409.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -25,6 +25,8 @@ const name_filter = [
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /naked-hd\s*\.\s*xyz/i,
     /loveface\s*\.\s*xyz/i,
+    /likesex\s*\.\s*uno/i,
+    /xxgirls\s*\.\s*uno/i,
     /nlg{2}er/i,
     /richard ?simmons/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
