@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220409.1
+// @version          20220507.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -21,16 +21,18 @@ const SHOWALL = false;
 // Name filters
 const name_filter = [
     /bestcams\s*\.\s*fun/i,
+    /likesex\s*\.\s*uno/i,
+    /loveface\s*\.\s*xyz/i,
+    /naked-hd\s*\.\s*xyz/i,
+    /tinder-x\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
-    /naked-hd\s*\.\s*xyz/i,
-    /loveface\s*\.\s*xyz/i,
-    /likesex\s*\.\s*uno/i,
     /xxgirls\s*\.\s*uno/i,
     /nlg{2}er/i,
     /richard ?simmons/i,
-    /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
-    /DumbDrum 1999 \(Dahir Behi\)/i
+    /DumbDrum 1999 \(Dahir Behi\)/i,
+    /adult dating site/i,
+    /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i
 ];
 
 // Message filters
