@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220507.1
+// @version          20220507.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -42,6 +42,12 @@ const msg_filter = [
     /your-dreams\s*\.\s*online/i,
     /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
     /i will eliminate the middle class/i
+];
+
+const del_filter = [
+    /\bvee\b/i,
+    /\bgunt\b/i,
+    /\bralph((a|amale)\b)?/i
 ];
 
 // TODO: add which action {del, time, hide} to perform:
@@ -85,6 +91,7 @@ const msg_filter = [
 
                 if (SHOWALL) { console.log(author + ": " + message); }
 
+                // Hide
                 if (name_filter.some((re) => re.test(author)) ||
                     msg_filter.some((re) => re.test(message))) {
                     count++;
@@ -105,6 +112,24 @@ const msg_filter = [
                         }
                         if (del_btn) { del_btn.click(); }
                         if (hide_btn) { hide_btn.click(); }
+                    }
+                }
+
+                // Delete
+                if (del_filter.some((re) => re.test(message))) {
+                    console.log("DELETED:  " + author + ": " + message);
+                    if (!deleted) {
+                        let buttons = target.querySelector('#inline-action-buttons')
+                            .getElementsByTagName('button');
+                        let del_btn;
+                        for (let btn of buttons) {
+                            let label = btn.getAttribute('aria-label');
+                            if (label === "Remove" || label === "削除") {
+                                del_btn = btn;
+                                continue;
+                            }
+                        }
+                        if (del_btn) { del_btn.click(); }
                     }
                 }
             }
