@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220509.4
+// @version          20220509.5
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -84,7 +84,8 @@ const del_filter = [
     new MutationObserver((mutationsList) => {
         mutationsList.forEach(function(mutation) {
             let target = mutation.target;
-            if (target.tagName === 'YT-LIVE-CHAT-TEXT-MESSAGE-RENDERER') {
+            if (target.tagName === 'YT-LIVE-CHAT-TEXT-MESSAGE-RENDERER' ||
+                target.tagName === 'YT-LIVE-CHAT-PAID-MESSAGE-RENDERER') {
                 let author = target.querySelector('#author-name').innerText;
                 let message = target.querySelector('#message');
                 let deleted = target.querySelector('#deleted-state').innerText;
