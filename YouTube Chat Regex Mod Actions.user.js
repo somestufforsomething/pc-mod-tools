@@ -35,7 +35,7 @@ const name_filter = [
     /adult dating site/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
     /sex penetration pussy/i,
-    /i love kids p(o|0)rn/i
+    /i love kids? p(o|0)rn/i
 ];
 
 // Message filters
