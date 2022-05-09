@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220509.2
+// @version          20220509.3
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -43,7 +43,8 @@ const msg_filter = [
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
     /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
-    /i will eliminate the middle class/i
+    /i will eliminate the middle class/i,
+    /i love kids :yt:/i
 ];
 
 const del_filter = [
