@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220509.1
+// @version          20220509.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -83,13 +83,21 @@ const del_filter = [
             let target = mutation.target;
             if (target.tagName === 'YT-LIVE-CHAT-TEXT-MESSAGE-RENDERER') {
                 let author = target.querySelector('#author-name').innerText;
-                let message = target.querySelector('#message').innerHTML;
+                let message = target.querySelector('#message');
                 let deleted = target.querySelector('#deleted-state').innerText;
 
-                let yt_emote_re = /<img[^>]+data-emoji-id[^>]+shared-tooltip-text="([^"]+)"[^>]+>/gi;
-                let emoji_re = /<img[^>]+alt="([^"]+)"[^>]+>/gi;
-                message = message.replaceAll(yt_emote_re, "$1");
-                message = message.replaceAll(emoji_re, "$1");
+                message = Array.from(message.childNodes)
+                    .map(function (node) {
+                        if (node.tagName === 'IMG') {
+                            if (/[a-zA-Z]/.test(node.alt)) {
+                                return `:${node.alt}:`;
+                            } else {
+                                return node.alt;
+                            }
+                        }
+                        return node.data;
+                    })
+                    .join(' ');
 
                 if (SHOWALL) { console.log(author + ": " + message); }
 
