@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220509.3
+// @version          20220509.4
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -34,7 +34,8 @@ const name_filter = [
     /thomas.*rillo/i,
     /adult dating site/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
-    /sex penetration pussy/i
+    /sex penetration pussy/i,
+    /i love kids p(o|0)rn/i
 ];
 
 // Message filters
@@ -44,7 +45,8 @@ const msg_filter = [
     /your-dreams\s*\.\s*online/i,
     /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
     /i will eliminate the middle class/i,
-    /i love kids :yt:/i
+    /i love kids\s*:yt:/i,
+    /:yt:\s*i love kids/i
 ];
 
 const del_filter = [
