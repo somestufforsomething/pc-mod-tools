@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220509.5
+// @version          20220510.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -50,9 +50,6 @@ const msg_filter = [
 ];
 
 const del_filter = [
-    /\bvee\b/i,
-    /\bgunt\b/i,
-    /\bralph((a|amale)\b)?/i
 ];
 
 // TODO: add which action {del, time, hide} to perform:
