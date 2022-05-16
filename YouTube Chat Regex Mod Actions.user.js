@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220510.1
+// @version          20220516.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -24,6 +24,7 @@ const name_filter = [
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /naked-hd\s*\.\s*xyz/i,
+    /sexy-chat\s*\.\s*xyz/i,
     /tinder-x\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
@@ -32,7 +33,7 @@ const name_filter = [
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
     /thomas.*rillo/i,
-    /adult dating site/i,
+    /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i
