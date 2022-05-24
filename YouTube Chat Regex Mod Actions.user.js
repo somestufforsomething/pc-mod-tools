@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220516.1
+// @version          20220524.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -35,6 +35,12 @@ const name_filter = [
     /thomas.*rillo/i,
     /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
+    /here girls want everyone even you/i,
+    /jerk off adv! wet girls are here!/i,
+    /find girl even in the shithole!/i,
+    /enough watch stream! girls here!/i,
+    /bro! just go website and fuck girl/i,
+    /fuck ad! wet girls are here! bro!/i,
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i
 ];
