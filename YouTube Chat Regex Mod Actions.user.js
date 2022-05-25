@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220524.1
+// @version          20220524.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -23,7 +23,7 @@ const name_filter = [
     /bestcams\s*\.\s*fun/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
-    /naked-hd\s*\.\s*xyz/i,
+    /naked-hd\s*\.\s*(fun|xyz)/i,
     /sexy-chat\s*\.\s*xyz/i,
     /tinder-x\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
