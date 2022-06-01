@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220524.2
+// @version          20220531.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -42,7 +42,8 @@ const name_filter = [
     /bro! just go website and fuck girl/i,
     /fuck ad! wet girls are here! bro!/i,
     /sex penetration pussy/i,
-    /i love kids? p(o|0)rn/i
+    /i love kids? p(o|0)rn/i,
+    /my b(i|l)g d(i|l)ck in your m(o|0)uth/i
 ];
 
 // Message filters
