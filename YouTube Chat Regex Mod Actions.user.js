@@ -96,6 +96,15 @@ const del_filter = [
                 let message = target.querySelector('#message');
                 let deleted = target.querySelector('#deleted-state').innerText;
 
+                const varchars = {
+                    'а':'a', 'в':'b', 'с':'c', 'е':'e',
+                    'н':'h', 'к':'k', 'м':'m', 'о':'o',
+                    'р':'p', 'т':'t', 'х':'x'
+                };
+
+                let normalize = new RegExp(`[${Object.keys(varchars).join('')}]`, 'gi');
+                author = author.replaceAll(normalize, m => varchars[m.toLowerCase()]);
+
                 message = Array.from(message.childNodes)
                     .map(function (node) {
                         if (node.tagName === 'IMG') {
