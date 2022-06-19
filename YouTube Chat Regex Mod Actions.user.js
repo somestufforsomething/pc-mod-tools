@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220616.1
+// @version          20220618.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -48,6 +48,7 @@ const name_filter = [
     /send dick pics to girls with us/i,
     /stop jerking! find girl and fuck!/i,
     /we have more cheap sex than tinder/i,
+    /airbnb sexy super host 69/i,
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i
