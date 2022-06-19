@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220618.1
+// @version          20220619.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -21,6 +21,7 @@ const SHOWALL = false;
 // Name filters
 const name_filter = [
     /bestcams\s*\.\s*fun/i,
+    /casino-top1\s*.\s*com/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /naked-hd\s*\.\s*(fun|xyz)/i,
@@ -35,18 +36,26 @@ const name_filter = [
     /thomas.*rillo/i,
     /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
-    /here girls want everyone even you/i,
     /bro! cheapest tinder just for sex!/i,
     /bro! just go website and fuck girl/i,
     /cheap sex dating! just fuck girls!/i,
+    /cheap sex! streamer recommends!/i,
+    /cheaper tinder! even you can fuck!/i,
     /cheapest sex dating! find n fuck!/i,
     /enough watch stream! girls here!/i,
     /find girl even in the shithole!/i,
     /fuck ad! wet girls are here! bro!/i,
+    /fuck tinder! we are cheaper & fast/i,
+    /here girls want everyone even you/i,
     /jerk off adv! wet girls are here!/i,
+    /just try this cheapest sex tinder!/i,
     /love to cheap fuck? then we're in!/i,
+    /no whores! real cheap fuck dates!/i,
     /send dick pics to girls with us/i,
+    /sex dates! fuck overpriced tinder/i,
     /stop jerking! find girl and fuck!/i,
+    /the cheapest one time 18\+ dates!/i,
+    /tinder overpriced shit! try us 18\+/i,
     /we have more cheap sex than tinder/i,
     /airbnb sexy super host 69/i,
     /sex penetration pussy/i,
