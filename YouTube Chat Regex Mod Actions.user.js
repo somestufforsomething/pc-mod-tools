@@ -7,13 +7,10 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220715.1
+// @version          20220716.1
 // ==/UserScript==
 
 // ======================== Settings ============================
-// Number of seconds to wait for the chat frame to load
-const IDLE = 10;    // HACK :(
-
 // Log all messages to the console (for debugging)
 const SHOWALL = false;
 
@@ -202,15 +199,22 @@ async function getRootNode(url) {
     if (url.match(/live_chat/)) {
         return document;
     }
-    if (url.match(/watch/)) {
-        // HACK :(
+    if (url.match(/watch\?v=/) || url.match(/live/)) {
         console.log("waiting for chat to load...");
-        await new Promise(res => setTimeout(res, IDLE * 1000));
-        console.log("hopefully chat has loaded by now");
-    }
-    let chat = document.querySelector('#chatframe');
-    if (chat.src.match(/live_chat\?/)) {
-        return chat.contentDocument;
+        let chat = await new Promise((resolve) => {
+            new MutationObserver((mutationsList, observer) => {
+                let chatframe = document.querySelector('#chatframe');
+                if(chatframe.contentDocument.querySelector('#chat-messages')) {
+                  resolve(chatframe);
+                  observer.disconnect();
+                }
+            }).observe(document.body, {childList: true, subtree: true});
+        });
+        console.log("chat finished loading");
+
+        if (chat.src.match(/live_chat\?/)) {
+            return chat.contentDocument;
+        }
     }
     return null;
 }
