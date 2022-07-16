@@ -6,7 +6,7 @@
 // @downloadURL      https://github.com/somestufforsomething/pc-mod-tools/raw/main/YouTube%20Chat%20Regex%20Mod%20Actions.user.js
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
-// @match            https://www.youtube.com/*
+// @match            https://*.youtube.com/*
 // @version          20220716.2
 // ==/UserScript==
 
@@ -96,19 +96,11 @@ const del_filter = [
     const root = await getRootNode(window.location.href);
     if (!root) { return; }
 
-    let isMod = false;
-
-    let badges = root.querySelector('yt-live-chat-message-input-renderer')
-        .getElementsByTagName('yt-live-chat-author-badge-renderer');
-
-    for (let b of badges) {
-        if (b.getAttribute('type') === 'moderator') {
-            isMod = true;
-            break;
-        }
+    // mod check
+    if (!root.querySelector('yt-live-chat-message-input-renderer #author-name')
+        .className.match(/\b(owner|moderator)\b/)) {
+        return;
     }
-
-    if (!isMod) { return; }
 
     // switch to Live view
     switchToLiveView(root);
