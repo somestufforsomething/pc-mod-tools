@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://www.youtube.com/*
-// @version          20220716.1
+// @version          20220716.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -109,6 +109,9 @@ const del_filter = [
     }
 
     if (!isMod) { return; }
+
+    // switch to Live view
+    switchToLiveView(root);
 
     let count = 0;
     console.log("Ready to bonk!");
@@ -217,4 +220,8 @@ async function getRootNode(url) {
         }
     }
     return null;
+}
+
+function switchToLiveView(root) {
+    root.querySelector('#view-selector #menu a:last-of-type').click();
 }
