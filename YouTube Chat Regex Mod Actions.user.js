@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220716.2
+// @version          20220716.3
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -55,6 +55,7 @@ const name_filter = [
     /new ai will find a girl for you/i,
     /no whores! real cheap fuck dates!/i,
     /omg! fuck ad! sex cheaper tinder!/i,
+    /only putin didn't find girl with us/i,
     /our ai help you find perfect match!/i,
     /send dick pics to girls with us/i,
     /sex dates! fuck overpriced tinder/i,
