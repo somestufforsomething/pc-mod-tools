@@ -146,21 +146,11 @@ const del_filter = [
                     count++;
                     console.log("CAUGHT " + count + ":  " + author + ": " + message);
                     if (!deleted) {
-                        let buttons = target.querySelector('#inline-action-buttons')
-                            .getElementsByTagName('button');
-                        let del_btn, hide_btn;
-                        for (let btn of buttons) {
-                            let label = btn.getAttribute('aria-label');
-                            if (label === "Remove" || label === "削除") {
-                                del_btn = btn;
-                                continue;
-                            }
-                            if (label.match(/Hide/) || label === "このチャンネルのユーザーを表示しない") {
-                                hide_btn = btn;
-                            }
-                        }
-                        if (del_btn) { del_btn.click(); }
-                        if (hide_btn) { hide_btn.click(); }
+                        let buttons = target.querySelector('#inline-action-buttons button');
+                        let del_btn = buttons[0];
+                        let hide_btn = buttons[2];
+                        del_btn.click();
+                        hide_btn.click();
                     }
                 }
 
@@ -168,17 +158,9 @@ const del_filter = [
                 if (del_filter.some((re) => re.test(message))) {
                     console.log("DELETED:  " + author + ": " + message);
                     if (!deleted) {
-                        let buttons = target.querySelector('#inline-action-buttons')
-                            .getElementsByTagName('button');
-                        let del_btn;
-                        for (let btn of buttons) {
-                            let label = btn.getAttribute('aria-label');
-                            if (label === "Remove" || label === "削除") {
-                                del_btn = btn;
-                                continue;
-                            }
-                        }
-                        if (del_btn) { del_btn.click(); }
+                        let buttons = target.querySelector('#inline-action-buttons button');
+                        let del_btn = buttons[0];
+                        del_btn.click();
                     }
                 }
             }
