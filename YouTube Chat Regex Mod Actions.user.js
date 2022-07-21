@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220716.3
+// @version          20220721.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -34,6 +34,7 @@ const name_filter = [
     /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
     /best adult dating site!/i,
+    /84% have already found love with us/i,
     /bro! cheapest tinder just for sex!/i,
     /bro! just go website and fuck girl/i,
     /cheap sex dating! just fuck girls!/i,
@@ -41,6 +42,7 @@ const name_filter = [
     /cheaper tinder! even you can fuck!/i,
     /cheapest sex dating! find n fuck!/i,
     /enough watch stream! girls here!/i,
+    /fill life with emotions - find love/i,
     /find girl even in the shithole!/i,
     /find love in your city today!/i,
     /fuck ad! wet girls are here! bro!/i,
@@ -52,6 +54,7 @@ const name_filter = [
     /just try this cheapest sex tinder!/i,
     /looks like we found you a girl!/i,
     /love to cheap fuck? then we're in!/i,
+    /new ai dating disrupt an industry!​/i,
     /new ai will find a girl for you/i,
     /no whores! real cheap fuck dates!/i,
     /omg! fuck ad! sex cheaper tinder!/i,
