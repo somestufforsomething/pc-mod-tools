@@ -147,7 +147,7 @@ const del_filter = [
                     count++;
                     console.log("CAUGHT " + count + ":  " + author + ": " + message);
                     if (!deleted) {
-                        let buttons = target.querySelector('#inline-action-buttons button');
+                        let buttons = target.querySelectorAll('#inline-action-buttons button');
                         let del_btn = buttons[0];
                         let hide_btn = buttons[2];
                         del_btn.click();
@@ -159,7 +159,7 @@ const del_filter = [
                 if (del_filter.some((re) => re.test(message))) {
                     console.log("DELETED:  " + author + ": " + message);
                     if (!deleted) {
-                        let buttons = target.querySelector('#inline-action-buttons button');
+                        let buttons = target.querySelectorAll('#inline-action-buttons button');
                         let del_btn = buttons[0];
                         del_btn.click();
                     }
