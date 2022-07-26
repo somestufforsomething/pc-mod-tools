@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220725.1
+// @version          20220726.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -17,8 +17,10 @@ const SHOWALL = false;
 // Specify patterns to automatically hide/ban a user from yt chat
 // Name filters
 const name_filter = [
+    /\.\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|uno|wtf|xyz) -/i,
     /bestcams\s*\.\s*fun/i,
-    /casino-top1\s*.\s*com/i,
+    /bit-invest\s*\.\s*xyz/i,
+    /casino-top1\s*\.\s*com/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /love-chat\s*\.\s*xyz/i,
@@ -32,6 +34,7 @@ const name_filter = [
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
     /thomas.*rillo/i,
+    /earn money on the crypt!/i,
     /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
     /best adult dating site!/i,
