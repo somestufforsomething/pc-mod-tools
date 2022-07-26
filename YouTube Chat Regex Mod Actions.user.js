@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220721.1
+// @version          20220725.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -21,6 +21,7 @@ const name_filter = [
     /casino-top1\s*.\s*com/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
+    /love-chat\s*\.\s*xyz/i,
     /naked-hd\s*\.\s*(fun|xyz)/i,
     /sexy-chat\s*\.\s*xyz/i,
     /tinder-x\s*\.\s*xyz/i,
@@ -63,10 +64,12 @@ const name_filter = [
     /send dick pics to girls with us/i,
     /sex dates! fuck overpriced tinder/i,
     /stop jerking! find girl and fuck!/i,
+    /stop watching the stream! find love/i,
     /the cheapest one time 18\+ dates!/i,
     /tinder overpriced shit! try us 18\+/i,
     /tired of being alone\? we'll help u/i,
     /ugh tinder? our girls write first!/i,
+    /want to find help\? we will help!/i,
     /we have more cheap sex than tinder/i,
     /airbnb sexy super host 69/i,
     /dog butt licking services/i,
