@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220726.1
+// @version          20220808.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -19,12 +19,14 @@ const SHOWALL = false;
 const name_filter = [
     /\.\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|uno|wtf|xyz) -/i,
     /bestcams\s*\.\s*fun/i,
+    /bitcoin-in\s*\.\s*xyz/i,
     /bit-invest\s*\.\s*xyz/i,
     /casino-top1\s*\.\s*com/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /love-chat\s*\.\s*xyz/i,
-    /naked-hd\s*\.\s*(fun|xyz)/i,
+    /(naked|nude)-(game|hd|sex)\s*\.\s*(fun|xyz)/i,
+    /sexfind4\s*\.\s*com/i,
     /sexy-chat\s*\.\s*xyz/i,
     /tinder-x\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
@@ -46,6 +48,7 @@ const name_filter = [
     /cheaper tinder! even you can fuck!/i,
     /cheapest sex dating! find n fuck!/i,
     /enough watch stream! girls here!/i,
+    /free girls from your city/i,
     /fill life with emotions - find love/i,
     /find girl even in the shithole!/i,
     /find love in your city today!/i,
@@ -72,6 +75,7 @@ const name_filter = [
     /tinder overpriced shit! try us 18\+/i,
     /tired of being alone\? we'll help u/i,
     /ugh tinder? our girls write first!/i,
+    /very cool anime adult game/i,
     /want to find help\? we will help!/i,
     /we have more cheap sex than tinder/i,
     /airbnb sexy super host 69/i,
