@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220814.1
+// @version          20220816.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -33,7 +33,7 @@ const name_filter = [
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /xxgirls\s*\.\s*uno/i,
-    /nlg{2}er/i,
+    /n(i|l)g{2}er/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
     /thomas.*rillo/i,
@@ -97,6 +97,7 @@ const msg_filter = [
     /i love kids\s*:yt:/i,
     /:yt:\s*i love kids/i,
     /this bot is inmortal and unbannable thx to our patrons/i,
+    /n(i|l)g{2}er/i
 ];
 
 const del_filter = [
