@@ -198,7 +198,7 @@ async function getRootNode(url) {
         let chat = await new Promise((resolve) => {
             new MutationObserver((mutationsList, observer) => {
                 let chatframe = document.querySelector('#chatframe');
-                if(chatframe.contentDocument.querySelector('#chat-messages')) {
+                if(chatframe && chatframe.contentDocument.querySelector('#chat-messages')) {
                   resolve(chatframe);
                   observer.disconnect();
                 }
