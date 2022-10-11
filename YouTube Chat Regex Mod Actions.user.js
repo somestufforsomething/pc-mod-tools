@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20220831.1
+// @version          20221011.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -60,6 +60,7 @@ const name_filter = [
     /here girls want everyone even you/i,
     /jerk off adv! wet girls are here!/i,
     /just try this cheapest sex tinder!/i,
+    /looks like we found a girl for you!/i,
     /looks like we found you a girl!/i,
     /love to cheap fuck? then we're in!/i,
     /new ai dating disrupt an industry!​/i,
@@ -84,7 +85,8 @@ const name_filter = [
     /dog butt licking services/i,
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i,
-    /my b(i|l)g d(i|l)ck in your m(o|0)uth/i
+    /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
+    /humbert the hummer/i
 ];
 
 // Message filters
@@ -97,6 +99,7 @@ const msg_filter = [
     /i love kids\s*:yt:/i,
     /:yt:\s*i love kids/i,
     /this bot is inmortal and unbannable thx to our patrons/i,
+    /nymphet/i,
     /n(i|l)g{2}er/i
 ];
 
