@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20221011.1
+// @version          20221012.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -86,7 +86,8 @@ const name_filter = [
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
-    /humbert the hummer/i
+    /humbert the hummer/i,
+    /hail hitler/i
 ];
 
 // Message filters
@@ -137,6 +138,9 @@ const del_filter = [
                 let deleted = target.querySelector('#deleted-state').innerText;
 
                 const varchars = {
+                    // Diacritics
+                    'ï':'i',
+
                     // Cyrillic
                     'а':'a', 'в':'b', 'с':'c', 'е':'e',
                     'н':'h', 'к':'k', 'м':'m', 'о':'o',
