@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20221012.1
+// @version          20221012.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -87,7 +87,7 @@ const name_filter = [
     /i love kids? p(o|0)rn/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
-    /hail hitler/i
+    /h(a|e)il hitler/i
 ];
 
 // Message filters
