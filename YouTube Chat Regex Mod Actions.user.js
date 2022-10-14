@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20221012.2
+// @version          20221014.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -17,7 +17,7 @@ const SHOWALL = false;
 // Specify patterns to automatically hide/ban a user from yt chat
 // Name filters
 const name_filter = [
-    /\.\s*(com|fyi|life|ngo|nko|ong|red|rent|tech|today|uno|wtf|xyz)\b/i,
+    /\.\s*(com|fyi|life|ngo|nko|ong|pro|red|rent|tech|today|uno|wtf|xyz)\b/i,
     /69mega\s*\.\s*fun/i,
     /bestcams\s*\.\s*fun/i,
     /bitcoin-in\s*\.\s*xyz/i,
@@ -27,9 +27,11 @@ const name_filter = [
     /loveface\s*\.\s*xyz/i,
     /love-chat1?\s*\.\s*xyz/i,
     /(naked|nude)-(game|hd|sex)\s*\.\s*(fun|xyz)/i,
+    /sexfind\s*\.\s*pro/i,
     /sexfind4\s*\.\s*com/i,
     /sexy-chat\s*\.\s*xyz/i,
     /tinder-x\s*\.\s*xyz/i,
+    /tinder-hot\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /xxgirls\s*\.\s*uno/i,
