@@ -7,7 +7,7 @@
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
 // @match            https://*.youtube.com/*
-// @version          20221017.1
+// @version          20221017.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -27,6 +27,7 @@ const name_filter = [
     /loveface\s*\.\s*xyz/i,
     /love-chat1?\s*\.\s*xyz/i,
     /(naked|nude)-(game|hd|sex)\s*\.\s*(fun|xyz)/i,
+    /pas36\s*\.\s*fun/i,
     /sexfind\s*\.\s*pro/i,
     /sexfind4\s*\.\s*com/i,
     /sexy-chat\s*\.\s*xyz/i,
