@@ -6,8 +6,9 @@
 // @downloadURL      https://github.com/somestufforsomething/pc-mod-tools/raw/main/YouTube%20Chat%20Regex%20Mod%20Actions.user.js
 // @supportURL       https://github.com/somestufforsomething/pc-mod-tools/issues
 // @license          MIT
+// @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221024.2
+// @version          20221024.3
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -18,6 +19,7 @@ const SHOWALL = false;
 // Name filters
 const name_filter = [
     /\.\s*(biz|com|fyi|info|life|ngo|nko|ong|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
+    /18sex\s*\.\s*xyz/i,
     /69girls\s*\.\s*xyz/i,
     /69mega\s*\.\s*fun/i,
     /bestcams\s*\.\s*fun/i,
@@ -67,7 +69,7 @@ const name_filter = [
     /looks like we found a girl for you!/i,
     /looks like we found you a girl!/i,
     /love to cheap fuck? then we're in!/i,
-    /new ai dating disrupt an industry!​/i,
+    /new ai dating disrupt an industry!/i,
     /new ai will find a girl for you/i,
     /no whores! real cheap fuck dates!/i,
     /omg! fuck ad! sex cheaper tinder!/i,
