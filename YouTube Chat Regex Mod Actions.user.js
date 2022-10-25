@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221024.3
+// @version          20221025.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -18,7 +18,7 @@ const SHOWALL = false;
 // Specify patterns to automatically hide/ban a user from yt chat
 // Name filters
 const name_filter = [
-    /\.\s*(biz|com|fyi|info|life|ngo|nko|ong|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
+    /\.\s*(biz|com|fyi|info|life|ngo|nko|ong|online|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
     /18sex\s*\.\s*xyz/i,
     /69girls\s*\.\s*xyz/i,
     /69mega\s*\.\s*fun/i,
@@ -26,6 +26,7 @@ const name_filter = [
     /bitcoin-in\s*\.\s*xyz/i,
     /bit-invest\s*\.\s*xyz/i,
     /casino-top1\s*\.\s*com/i,
+    /girls18\s*\.\s*online/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /love-chat1?\s*\.\s*xyz/i,
