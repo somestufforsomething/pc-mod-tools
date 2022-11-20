@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221031.1
+// @version          20221120.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -20,13 +20,14 @@ const SHOWALL = false;
 const name_filter = [
     /\.\s*(biz|com|fyi|fun|info|life|ngo|nko|ong|online|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
     /18sex\s*\.\s*xyz/i,
+    /69xxx\s*\.\s*xyz/i,
     /69girls\s*\.\s*xyz/i,
     /69mega\s*\.\s*fun/i,
     /bestcams\s*\.\s*fun/i,
     /bitcoin-in\s*\.\s*xyz/i,
     /bit-invest\s*\.\s*xyz/i,
     /casino-top1\s*\.\s*com/i,
-    /girls18\s*\.\s*online/i,
+    /girls(4|18)\s*\.\s*online/i,
     /likesex\s*\.\s*uno/i,
     /loveface\s*\.\s*xyz/i,
     /love-chat1?\s*\.\s*xyz/i,
@@ -40,7 +41,7 @@ const name_filter = [
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /xxgirls\s*\.\s*uno/i,
-    /xxx20\s*\.\s*fun/i,
+    /xxx(18|20)\s*\.\s*(fun|in)/i,
     /n(i|l)g{2}er/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
@@ -60,11 +61,11 @@ const name_filter = [
     /free girls from your city/i,
     /fill life with emotions - find love/i,
     /find girl even in the shithole!/i,
-    /find love in your city today!/i,
+    /find love in your (city|town) today!/i,
     /fuck ad! wet girls are here! bro!/i,
     /fuck tinder! we are cheaper & fast/i,
     /future is here! dating ai match 84%/i,
-    /have a good time - find love!/i,
+    /have a good time - find (your )?love!/i,
     /here girls want everyone even you/i,
     /jerk off adv! wet girls are here!/i,
     /just try this cheapest sex tinder!/i,
@@ -72,7 +73,8 @@ const name_filter = [
     /looks like we found you a girl!/i,
     /love to cheap fuck? then we're in!/i,
     /new ai dating disrupt an industry!/i,
-    /new ai will find a girl for you/i,
+    /new ai dating for all tastes & ages/i,
+    /new ai (\d+% )?will find a girl for you/i,
     /no whores! real cheap fuck dates!/i,
     /omg! fuck ad! sex cheaper tinder!/i,
     /only putin didn't find girl with us/i,
@@ -103,7 +105,7 @@ const msg_filter = [
     /niosnc\s*\.\s*site/i,
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
-    /v.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
+    /\bv.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
     /i will eliminate the middle class/i,
     /i love kids\s*:yt:/i,
     /:yt:\s*i love kids/i,
