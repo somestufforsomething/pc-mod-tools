@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221120.1
+// @version          20221120.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -105,7 +105,7 @@ const msg_filter = [
     /niosnc\s*\.\s*site/i,
     /sister19lol\s*\.\s*online/i,
     /your-dreams\s*\.\s*online/i,
-    /\bv.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
+    // /\bv.{2,3}\s*\(?\s*\.\s*\)?\s*(fyi|life|ngo|nko|ong|red|rent|tech|today|wtf)/i,
     /i will eliminate the middle class/i,
     /i love kids\s*:yt:/i,
     /:yt:\s*i love kids/i,
