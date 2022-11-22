@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221122.1
+// @version          20221122.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -97,9 +97,7 @@ const name_filter = [
     /i love kids? p(o|0)rn/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
-    /h(a|e)il hitler/i,
-    /please support production kawaii/i
-];
+    /h(a|e)il hitler/i];
 
 // Message filters
 const msg_filter = [
@@ -112,7 +110,8 @@ const msg_filter = [
     /:yt:\s*i love kids/i,
     /this bot is inmortal and unbannable thx to our patrons/i,
     /nymphet/i,
-    /n(i|l)g{2}er/i
+    /n(i|l)g{2}er/i,
+    /please support production kawaii/i
 ];
 
 const del_filter = [
