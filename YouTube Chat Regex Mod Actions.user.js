@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221122.2
+// @version          20221124.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -97,7 +97,9 @@ const name_filter = [
     /i love kids? p(o|0)rn/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
-    /h(a|e)il hitler/i];
+    /h(a|e)il hitler/i,
+    /nazi/i,
+];
 
 // Message filters
 const msg_filter = [
