@@ -1,4 +1,4 @@
-g// ==UserScript==
+// ==UserScript==
 // @name             YouTube Chat Regex Mod Actions
 // @description      Automatically hide messages based on regex
 // @author           somestufforsomething
@@ -8,7 +8,7 @@ g// ==UserScript==
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221202.1
+// @version          20221202.2
 // ==/UserScript==
 
 // ======================== Settings ============================
