@@ -1,4 +1,4 @@
-// ==UserScript==
+g// ==UserScript==
 // @name             YouTube Chat Regex Mod Actions
 // @description      Automatically hide messages based on regex
 // @author           somestufforsomething
@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221124.1
+// @version          20221202.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -20,7 +20,7 @@ const SHOWALL = false;
 const name_filter = [
     /\.\s*(biz|com|fyi|fun|info|life|ngo|nko|ong|online|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
     /18sex\s*\.\s*xyz/i,
-    /69xxx\s*\.\s*xyz/i,
+    /69xxx\s*\.\s*(site|xyz)/i,
     /69girls\s*\.\s*xyz/i,
     /69mega\s*\.\s*fun/i,
     /bestcams\s*\.\s*fun/i,
@@ -36,12 +36,14 @@ const name_filter = [
     /sexchat69\s*\.\s*site/i,
     /sexfind/i,
     /sexy-chat\s*\.\s*xyz/i,
+    /sex-69\s*\.\s*fun/i,
     /tinder-x\s*\.\s*xyz/i,
     /tinder-hot\s*\.\s*xyz/i,
     /webcam-cam\s*\.\s*xyz/i,
     /webcams-chat\s*\.\s*(com|xyz)/i,
     /xxgirls\s*\.\s*uno/i,
-    /xxx(18|20)\s*\.\s*(fun|in)/i,
+    /xxx(18|20)\s*\.\s*(fun|in|site)/i,
+    /x-girls\s*\.\s*xyz/i,
     /n(i|l)g{2}er/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
@@ -99,6 +101,7 @@ const name_filter = [
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
     /nazi/i,
+    /Pudge007/i
 ];
 
 // Message filters
