@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221202.2
+// @version          20221210.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -18,7 +18,7 @@ const SHOWALL = false;
 // Specify patterns to automatically hide/ban a user from yt chat
 // Name filters
 const name_filter = [
-    /\.\s*(biz|com|fyi|fun|info|life|ngo|nko|ong|online|pro|red|rent|site|tech|today|uno|wtf|xyz)\b/i,
+    /\.\s*(biz|com|fyi|fun|info|life|ngo|nko|ong|online|pro|rent|site|tech|today|uno|wtf|xyz)\b/i,
     /18sex\s*\.\s*xyz/i,
     /69xxx\s*\.\s*(site|xyz)/i,
     /69girls\s*\.\s*xyz/i,
@@ -47,7 +47,8 @@ const name_filter = [
     /n(i|l)g{2}er/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
-    /thomas.*rillo/i,
+    /Pudge007/i,
+    // /thomas.*rillo/i,
     /earn money on the crypt!/i,
     /adu(i|l)t dat(i|l)ng s(i|l)te/i,
     /hot (boys|girls) and (boys|girls) (18\+ )?video chat/i,
@@ -100,8 +101,7 @@ const name_filter = [
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
-    /nazi/i,
-    /Pudge007/i
+    /nazi/i
 ];
 
 // Message filters
