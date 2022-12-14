@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221210.1
+// @version          20221214.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -47,6 +47,7 @@ const name_filter = [
     /n(i|l)g{2}er/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
+    /Ikari Henri - 碇ヘンリー/i,
     /Pudge007/i,
     // /thomas.*rillo/i,
     /earn money on the crypt!/i,
