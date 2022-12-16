@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221214.1
+// @version          20221215.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -45,6 +45,7 @@ const name_filter = [
     /xxx(18|20)\s*\.\s*(fun|in|site)/i,
     /x-girls\s*\.\s*xyz/i,
     /n(i|l)g{2}er/i,
+    /A RAIDER -fallout 4 you clown-/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
     /Ikari Henri - 碇ヘンリー/i,
