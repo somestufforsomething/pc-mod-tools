@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20221215.2
+// @version          20230101.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -100,6 +100,7 @@ const name_filter = [
     /dog butt licking services/i,
     /sex penetration pussy/i,
     /i love kids? p(o|0)rn/i,
+    /i love beautiful innocent little girl feet/i,
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
