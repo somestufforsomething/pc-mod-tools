@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230101.1
+// @version          20230125.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -48,6 +48,7 @@ const name_filter = [
     /A RAIDER -fallout 4 you clown-/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
+    /exoverse/i,
     /Ikari Henri - 碇ヘンリー/i,
     /Pudge007/i,
     // /thomas.*rillo/i,
@@ -123,6 +124,7 @@ const msg_filter = [
 ];
 
 const del_filter = [
+    /exoverse/i,
     /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i
 ];
 
