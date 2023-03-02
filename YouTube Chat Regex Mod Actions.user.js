@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230125.1
+// @version          20230202.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -125,7 +125,8 @@ const msg_filter = [
 
 const del_filter = [
     /exoverse/i,
-    /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i
+    /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i,
+    /ttd/i,
 ];
 
 // TODO: add which action {del, time, hide} to perform:
