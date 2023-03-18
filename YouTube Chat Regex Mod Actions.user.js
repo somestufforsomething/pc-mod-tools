@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230303.1
+// @version          20230318.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -170,6 +170,9 @@ const del_filter = [
                     'а':'a', 'в':'b', 'с':'c', 'е':'e',
                     'н':'h', 'к':'k', 'м':'m', 'о':'o',
                     'р':'p', 'т':'t', 'х':'x',
+
+                    // Punctuation
+                    '｡':'.',
                 };
 
                 let replacements = new RegExp(`[${Object.keys(varchars).join('')}]`, 'gi');
