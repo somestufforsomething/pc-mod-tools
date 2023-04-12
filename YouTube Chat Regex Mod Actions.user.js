@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230318.1
+// @version          20230411.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -123,7 +123,16 @@ const msg_filter = [
     /this bot is inmortal and unbannable thx to our patrons/i,
     /nymphet/i,
     /n(i|l)g{2}er/i,
-    /please support production kawaii/i
+    // /please support production kawaii/i,
+    /i love beautiful innocent little girl feet/i,
+    /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
+    /humbert the hummer/i,
+    /h(a|e)il hitler/i,
+    /nazi/i,
+    /\btroon/i,
+    /total train derailment/i,
+    /zogbot/i,
+    /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
 ];
 
 const del_filter = [
