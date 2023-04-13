@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230411.1
+// @version          20230412.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -125,13 +125,9 @@ const msg_filter = [
     /n(i|l)g{2}er/i,
     // /please support production kawaii/i,
     /i love beautiful innocent little girl feet/i,
-    /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
-    /h(a|e)il hitler/i,
-    /nazi/i,
     /\btroon/i,
     /total train derailment/i,
-    /zogbot/i,
     /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
 ];
 
@@ -139,6 +135,7 @@ const del_filter = [
     /exoverse/i,
     /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i,
     /\bttd\b/i,
+    /zogbot/i,
 ];
 
 // TODO: add which action {del, time, hide} to perform:
