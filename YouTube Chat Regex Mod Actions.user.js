@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230412.1
+// @version          20230519.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -109,6 +109,7 @@ const name_filter = [
     /\btroon/i,
     /total train derailment/i,
     /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
+    /38 year old cloutchasing virtual gay man/i,
 ];
 
 // Message filters
