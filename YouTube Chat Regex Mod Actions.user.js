@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230519.1
+// @version          20230527.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -180,6 +180,15 @@ const del_filter = [
 
                     // Punctuation
                     '｡':'.',
+
+                    // Small caps
+                    'ᴀ':'a', 'ʙ':'b', 'ᴄ':'c', 'ᴅ':'d',
+                    'ᴇ':'e', 'ꜰ':'f', 'ɢ':'g', 'ʜ':'h',
+                    'ɪ':'i', 'ᴊ':'j', 'ᴋ':'k', 'ʟ':'l',
+                    'ᴍ':'m', 'ɴ':'n', 'ᴏ':'o', 'ᴘ':'p',
+                    'ꞯ':'q', 'ʀ':'r', 'ꜱ':'s', 'ᴛ':'t',
+                    'ᴜ':'u', 'ᴠ':'v', 'ᴡ':'w',
+                    'ʏ':'y', 'ᴢ':'z',
                 };
 
                 let replacements = new RegExp(`[${Object.keys(varchars).join('')}]`, 'gi');
