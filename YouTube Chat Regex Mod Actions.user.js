@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230527.1
+// @version          20230609.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -266,5 +266,5 @@ async function getRootNode(url) {
 }
 
 function switchToLiveView(root) {
-    root.querySelector('#view-selector #menu a:last-of-type').click();
+    root.querySelector('#view-selector #menu a:nth-child(2)').click();
 }
