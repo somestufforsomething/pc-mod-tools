@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230609.1
+// @version          20230703.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -173,10 +173,22 @@ const del_filter = [
                     // Diacritics
                     'ï':'i',
 
+                    // Burmese
+                    'ဌ':'g',
+
+                    // Canadian Syllabics
+                    'ᕦ':'e',
+
                     // Cyrillic
                     'а':'a', 'в':'b', 'с':'c', 'е':'e',
-                    'н':'h', 'к':'k', 'м':'m', 'о':'o',
-                    'р':'p', 'т':'t', 'х':'x',
+                    'ё':'e', 'є':'e', 'н':'h', 'ћ':'h',
+                    'і':'i', 'ї':'i', 'ӏ':'i', 'ỉ':'i',
+                    'ј':'j', 'к':'k', 'ќ':'k', 'м':'m',
+                    'и':'n', 'о':'o', 'р':'p', 'я':'r',
+                    'ѓ':'r', 'ѕ':'s', 'т':'t', 'х':'x',
+
+                    // Latin
+                    'ƞ':'n',
 
                     // Punctuation
                     '｡':'.',
