@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20230912.1
+// @version          20231005.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -122,7 +122,7 @@ const msg_filter = [
     /i love kids\s*:yt:/i,
     /:yt:\s*i love kids/i,
     /this bot is inmortal and unbannable thx to our patrons/i,
-    /\bnymphet\b/i,
+    // /\bnymphet\b/i,
     /n(i|l)g{2}er/i,
     // /please support production kawaii/i,
     /i love beautiful innocent little girl feet/i,
