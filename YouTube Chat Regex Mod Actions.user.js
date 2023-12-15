@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20231214.1
+// @version          20231214.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -130,7 +130,7 @@ const msg_filter = [
     /\btroon/i,
     /total train derailment/i,
     /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
-    /r(a|4|@)p(e|3)/i,
+    /\br(a|4|@)p(e|3)\b/i,
 ];
 
 const del_filter = [
