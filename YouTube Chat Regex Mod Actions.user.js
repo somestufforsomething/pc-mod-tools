@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20231214.3
+// @version          20231220.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -130,12 +130,12 @@ const msg_filter = [
     /\btroon/i,
     /total train derailment/i,
     /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
-    /\br(a|4|@)p(e|3)\b/i,
 ];
 
 const del_filter = [
     /exoverse/i,
     /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i,
+    /\br(4|@)p(e|3)\b/i,
     /\bttd\b/i,
     /zogbot/i,
 ];
