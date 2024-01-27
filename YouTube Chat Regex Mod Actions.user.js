@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20231220.1
+// @version          20240126.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -105,7 +105,7 @@ const name_filter = [
     /my b(i|l)g d(i|l)ck in your m(o|0)uth/i,
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
-    /nazi/i,
+    /\bnazi\b/i,
     /\btroon/i,
     /total train derailment/i,
     /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
