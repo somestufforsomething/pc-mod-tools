@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20240223.1
+// @version          20240223.2
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -129,7 +129,7 @@ const msg_filter = [
     /humbert the hummer/i,
     /\btroon/i,
     /total train derailment/i,
-    /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
+    // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
 ];
 
 const del_filter = [
