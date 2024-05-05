@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20240223.2
+// @version          20240505.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -106,7 +106,7 @@ const name_filter = [
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
     /\bnazi\b/i,
-    /\btroon/i,
+    /\btroons?\b/i,
     /total train derailment/i,
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
     /38 year old cloutchasing virtual gay man/i,
@@ -127,7 +127,7 @@ const msg_filter = [
     // /please support production kawaii/i,
     /i love beautiful innocent little girl feet/i,
     /humbert the hummer/i,
-    /\btroon/i,
+    /\btroons?\b/i,
     /total train derailment/i,
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
 ];
@@ -136,7 +136,7 @@ const del_filter = [
     /exoverse/i,
     /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i,
     /\br(4|@)p(e|3)\b/i,
-    /\bttd\b/i,
+    // /\bttd\b/i,
     /zogbot/i,
 ];
 
