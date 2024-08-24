@@ -132,6 +132,9 @@ const msg_filter = [
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
 ];
 
+const timeout_filter = [
+];
+
 const del_filter = [
     /exoverse/i,
     /It's only the cold wind I feelIt's me that I spite as I stand up and fightThe only thing I know for realThere will be blood \(blood\) shed \(shed\)The man in the mirror nods his head/i,
@@ -233,6 +236,18 @@ const del_filter = [
                         let hide_btn = buttons[2];
                         del_btn.click();
                         hide_btn.click();
+                    }
+                }
+
+                // Timeout
+                if (timeout_filter.some((re) => re.test(message))) {
+                    console.log("TIMED OUT:  " + author + ": " + message);
+                    if (!deleted) {
+                        let buttons = target.querySelectorAll('#inline-action-buttons button');
+                        let del_btn = buttons[0];
+                        let timeout_btn = buttons[1];
+                        del_btn.click();
+                        timeout_btn.click();
                     }
                 }
 
