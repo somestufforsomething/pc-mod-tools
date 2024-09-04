@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20240823.1
+// @version          20240904.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -44,7 +44,6 @@ const name_filter = [
     /xxgirls\s*\.\s*uno/i,
     /xxx(18|20)\s*\.\s*(fun|in|site)/i,
     /x-girls\s*\.\s*xyz/i,
-    /n(i|l)g{2}er/i,
     /A RAIDER -fallout 4 you clown-/i,
     /richard ?simmons/i,
     /DumbDrum 1999 \(Dahir Behi\)/i,
@@ -106,7 +105,6 @@ const name_filter = [
     /humbert the hummer/i,
     /h(a|e)il hitler/i,
     /\bnazi\b/i,
-    /\btroons?\b/i,
     /total train derailment/i,
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
     /38 year old cloutchasing virtual gay man/i,
@@ -124,13 +122,16 @@ const msg_filter = [
     /:yt:\s*i love kids/i,
     /this bot is inmortal and unbannable thx to our patrons/i,
     // /\bnymphet\b/i,
-    /n(i|l)g{2}er/i,
     // /please support production kawaii/i,
     /i love beautiful innocent little girl feet/i,
     /humbert the hummer/i,
-    /\btroons?\b/i,
     /total train derailment/i,
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
+];
+
+const combined_filter = [
+    /n(i|l)g{2}er/i,
+    /\btro{2}ns?\b/i,
 ];
 
 const timeout_filter = [
@@ -228,7 +229,8 @@ const del_filter = [
 
                 // Hide
                 if (name_filter.some((re) => re.test(author)) ||
-                    msg_filter.some((re) => re.test(message))) {
+                    msg_filter.some((re) => re.test(message)) ||
+                    combined_filter.some((re) => re.test(author + message))) {
                     count++;
                     console.log("CAUGHT " + count + ":  " + author + ": " + message);
                     if (!deleted) {
