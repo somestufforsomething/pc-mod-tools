@@ -109,6 +109,7 @@ const name_filter = [
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
     /38 year old cloutchasing virtual gay man/i,
     /master8\s*gundam/i,
+    /Michael Annanack/i,
 ];
 
 // Message filters
