@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20240904.1
+// @version          20241219.1
 // ==/UserScript==
 
 // ======================== Settings ============================
