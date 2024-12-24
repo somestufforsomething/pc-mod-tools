@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20241219.1
+// @version          20241224.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -110,6 +110,7 @@ const name_filter = [
     /38 year old cloutchasing virtual gay man/i,
     /master8\s*gundam/i,
     /Michael Annanack/i,
+    /aryancunnyrapist88/i,
 ];
 
 // Message filters
