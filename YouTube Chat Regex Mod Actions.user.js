@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20241224.1
+// @version          20250102.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -108,7 +108,7 @@ const name_filter = [
     /total train derailment/i,
     // /💯(\s*🚂)?\s*(💀|☠)(\s*🚂)?/i,
     /38 year old cloutchasing virtual gay man/i,
-    /master8\s*gundam/i,
+    /m[a@]ster8\s*gundam/i,
     /Michael Annanack/i,
     /aryancunnyrapist88/i,
 ];
