@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20250102.1
+// @version          20250405.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -134,6 +134,7 @@ const msg_filter = [
 const combined_filter = [
     /n(i|l)g{2}er/i,
     /\btro{2}ns?\b/i,
+    /\bcobson\b/i,
 ];
 
 const timeout_filter = [
