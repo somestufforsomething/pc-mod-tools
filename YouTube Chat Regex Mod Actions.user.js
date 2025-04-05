@@ -168,6 +168,43 @@ const del_filter = [
 
     let count = 0;
     console.log("Ready to bonk!");
+
+    const varchars = {
+        // Diacritics
+        'ï':'i',
+
+        // Burmese
+        'ဌ':'g',
+
+        // Canadian Syllabics
+        'ᕦ':'e',
+
+        // Cyrillic
+        'а':'a', 'в':'b', 'с':'c', 'е':'e',
+        'ё':'e', 'є':'e', 'н':'h', 'ћ':'h',
+        'і':'i', 'ї':'i', 'ӏ':'i', 'ỉ':'i',
+        'ј':'j', 'к':'k', 'ќ':'k', 'м':'m',
+        'и':'n', 'о':'o', 'р':'p', 'я':'r',
+        'ѓ':'r', 'ѕ':'s', 'т':'t', 'х':'x',
+
+        // Latin
+        'ƞ':'n',
+
+        // Punctuation
+        '｡':'.',
+
+        // Small caps
+        'ᴀ':'a', 'ʙ':'b', 'ᴄ':'c', 'ᴅ':'d',
+        'ᴇ':'e', 'ꜰ':'f', 'ɢ':'g', 'ʜ':'h',
+        'ɪ':'i', 'ᴊ':'j', 'ᴋ':'k', 'ʟ':'l',
+        'ᴍ':'m', 'ɴ':'n', 'ᴏ':'o', 'ᴘ':'p',
+        'ꞯ':'q', 'ʀ':'r', 'ꜱ':'s', 'ᴛ':'t',
+        'ᴜ':'u', 'ᴠ':'v', 'ᴡ':'w',
+        'ʏ':'y', 'ᴢ':'z',
+    };
+
+    let replacements = new RegExp(`[${Object.keys(varchars).join('')}]`, 'gi');
+
     new MutationObserver((mutationsList) => {
         mutationsList.forEach(function(mutation) {
             let target = mutation.target;
@@ -177,41 +214,6 @@ const del_filter = [
                 let message = target.querySelector('#message');
                 let deleted = target.querySelector('#deleted-state').innerText;
 
-                const varchars = {
-                    // Diacritics
-                    'ï':'i',
-
-                    // Burmese
-                    'ဌ':'g',
-
-                    // Canadian Syllabics
-                    'ᕦ':'e',
-
-                    // Cyrillic
-                    'а':'a', 'в':'b', 'с':'c', 'е':'e',
-                    'ё':'e', 'є':'e', 'н':'h', 'ћ':'h',
-                    'і':'i', 'ї':'i', 'ӏ':'i', 'ỉ':'i',
-                    'ј':'j', 'к':'k', 'ќ':'k', 'м':'m',
-                    'и':'n', 'о':'o', 'р':'p', 'я':'r',
-                    'ѓ':'r', 'ѕ':'s', 'т':'t', 'х':'x',
-
-                    // Latin
-                    'ƞ':'n',
-
-                    // Punctuation
-                    '｡':'.',
-
-                    // Small caps
-                    'ᴀ':'a', 'ʙ':'b', 'ᴄ':'c', 'ᴅ':'d',
-                    'ᴇ':'e', 'ꜰ':'f', 'ɢ':'g', 'ʜ':'h',
-                    'ɪ':'i', 'ᴊ':'j', 'ᴋ':'k', 'ʟ':'l',
-                    'ᴍ':'m', 'ɴ':'n', 'ᴏ':'o', 'ᴘ':'p',
-                    'ꞯ':'q', 'ʀ':'r', 'ꜱ':'s', 'ᴛ':'t',
-                    'ᴜ':'u', 'ᴠ':'v', 'ᴡ':'w',
-                    'ʏ':'y', 'ᴢ':'z',
-                };
-
-                let replacements = new RegExp(`[${Object.keys(varchars).join('')}]`, 'gi');
                 author = author.normalize("NFKD").replaceAll(replacements, m => varchars[m.toLowerCase()]);
 
                 message = Array.from(message.childNodes)
@@ -266,6 +268,29 @@ const del_filter = [
                     }
                 }
             }
+
+            // TODO: sponsorship message -- can't use inline actions
+            // if (target.tagName === 'YTD-SPONSORSHIPS-LIVE-CHAT-GIFT-PURCHASE-ANNOUNCEMENT-RENDERER') {
+            //     let author = target.querySelector('#author-name').innerText;
+            //     let deleted = target.querySelector('#deleted-state').innerText;
+
+            //     author = author.normalize("NFKD").replaceAll(replacements, m => varchars[m.toLowerCase()]);
+
+            //     if (SHOWALL) { console.log(author); }
+
+            //     // Hide
+            //     if (name_filter.some((re) => re.test(author))) {
+            //         count++;
+            //         console.log("CAUGHT " + count + ":  " + author);
+            //         if (!deleted) {
+            //             let buttons = target.querySelectorAll('#inline-action-buttons button');
+            //             let del_btn = buttons[0];
+            //             let hide_btn = buttons[2];
+            //             del_btn.click();
+            //             hide_btn.click();
+            //         }
+            //     }
+            // }
         });
     }).observe(
         //root.getElementById('chat'),
