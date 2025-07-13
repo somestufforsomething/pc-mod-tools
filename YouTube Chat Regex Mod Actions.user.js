@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20250405.1
+// @version          20250712.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -111,6 +111,7 @@ const name_filter = [
     /m[a@]ster8\s*gundam/i,
     /Michael Annanack/i,
     /aryancunnyrapist88/i,
+    /LiamHughes-.*/i,
 ];
 
 // Message filters
