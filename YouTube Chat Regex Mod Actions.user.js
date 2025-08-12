@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20250808.1
+// @version          20250812.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -139,7 +139,6 @@ const combined_filter = [
 ];
 
 const timeout_filter = [
-    /\ba\/slur\b/i,
 ];
 
 const del_filter = [
