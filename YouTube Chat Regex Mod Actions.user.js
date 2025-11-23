@@ -8,7 +8,7 @@
 // @license          MIT
 // @match            https://youtube.com/*
 // @match            https://*.youtube.com/*
-// @version          20250907.1
+// @version          20251123.1
 // ==/UserScript==
 
 // ======================== Settings ============================
@@ -113,6 +113,7 @@ const name_filter = [
     /aryancunnyrapist88/i,
     /LiamHughes-.*/i,
     /Marcelo Yoshida|Yoshida Marcelo/i,
+	/^American Express$/i,
 ];
 
 // Message filters
